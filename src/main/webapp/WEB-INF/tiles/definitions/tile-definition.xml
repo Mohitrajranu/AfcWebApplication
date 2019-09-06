@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="baseLayout" template="/WEB-INF/tiles/template/baseLayout.jsp">
+		<put-attribute name="title" value="Sample Title" />
+		<put-attribute name="heading" value="" />
+		<put-attribute name="tagline" value="" />
+		<put-attribute name="navigation"
+			value="/WEB-INF/tiles/template/navigation.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+	</definition>
+	<definition name="classicLayout" template="/WEB-INF/tiles/template/classicLayout.jsp">
+		<put-attribute name="title" value="Sample Title" />
+		<put-attribute name="heading" value="" />
+		<put-attribute name="tagline" value="" />
+		<put-attribute name="navigation"
+			value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+	</definition>
+	<!-- ..........................Nidina...........................parts starts 
+		here -->
+	<definition name="welcome" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="heading" value="Human Resource" />
+		<put-attribute name="body" value="/WEB-INF/views/welcome.jsp" />
+	</definition>
+	<definition name="welcomeUser" extends="classicLayout">
+		<put-attribute name="title" value="Welcome User" />
+		<put-attribute name="heading" value="Human Resource" />
+		<put-attribute name="body" value="/WEB-INF/views/welcomeUser.jsp" />
+	</definition>
+
+	<definition name="vacancyList" extends="baseLayout">
+		<put-attribute name="title" value="Vacancy" />
+		<put-attribute name="heading" value="Human Resource" />
+		<put-attribute name="body" value="/WEB-INF/views/vacancyList.jsp" />
+	</definition>
+
+	<definition name="vacancy" extends="baseLayout">
+		<put-attribute name="title" value="Vacnacy" />
+		<put-attribute name="heading" value="Human Resource" />
+		<put-attribute name="body" value="/WEB-INF/views/vacancy.jsp" />
+	</definition>
+
+	<!-- ..........................Nabin...........................parts starts 
+		here -->
+	<definition name="employeeList" extends="baseLayout">
+		<put-attribute name="title" value="Employee" />
+		<put-attribute name="heading" value="Human Resource" />
+		<put-attribute name="body" value="/WEB-INF/views/employeeList.jsp" />
+	</definition>
+	<definition name="departmentList" extends="baseLayout">
+		<put-attribute name="title" value="Department" />
+		<put-attribute name="heading" value="Human Resource" />
+		<put-attribute name="body" value="/WEB-INF/views/departmentList.jsp" />
+	</definition>
+
+	<!-- ..........................Ashok...........................parts starts 
+		here -->
+	<definition name="leaveForm" extends="baseLayout">
+		<put-attribute name="title" value="Leave" />
+		<put-attribute name="heading" value="Human Resource" />
+		<put-attribute name="body" value="/WEB-INF/views/leaveForm.jsp" />
+	</definition>
+	<definition name="leaveList" extends="baseLayout">
+		<put-attribute name="title" value="Leave" />
+		<put-attribute name="heading" value="Human Resource" />
+		<put-attribute name="body" value="/WEB-INF/views/leaveList.jsp" />
+	</definition>
+	<definition name="attendence" extends="baseLayout">
+		<put-attribute name="title" value="Leave" />
+		<put-attribute name="heading" value="Human Resource" />
+		<put-attribute name="body" value="/WEB-INF/views/attendence.jsp" />
+	</definition>
+	<definition name="holidays" extends="baseLayout">
+		<put-attribute name="title" value="Attendence" />
+		<put-attribute name="heading" value="Human Resource" />
+		<put-attribute name="body" value="/WEB-INF/views/holidays.jsp" />
+	</definition>
+	<definition name="holidaysList" extends="baseLayout">
+		<put-attribute name="title" value="Holidays" />
+		<put-attribute name="heading" value="Human Resource" />
+		<put-attribute name="body" value="/WEB-INF/views/holidaysList.jsp" />
+	</definition>
+
+</tiles-definitions>
